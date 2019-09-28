@@ -3,6 +3,11 @@
 	src: url('./assets/fonts/myriadProReg.otf') format("opentype");
 }
 
+@font-face {
+	font-family: 'Segoe UI Light';
+	src: url('./assets/fonts/Segoe-UI-Lite.ttf') format("truetype");
+}
+
 body {
 	font-family: 'MyriadPro Regular', sans-serif;
 	font-size: 16px;
@@ -26,6 +31,11 @@ a {
 	display: flex;
 }
 
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
 /* HEADER */
 
 .header-wrap {
@@ -35,14 +45,12 @@ a {
 }
 
 .slider-btn {
-	display: flex;
 	position: absolute;
 	top: 53%;
 	width: 32px;
 	height: 57px;
-	justify-content: center;
-	align-items: center;
 	background-image: url('./assets/img/slider-btn-backg.png');
+	cursor: pointer;
 }
 
 .slider-btn_right {
@@ -162,6 +170,18 @@ a {
 	width: 549px;
 }
 
+.video__play-btn {
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-image: url('./assets/img/slider-play-btn-bckgr.png');
+}
+
+.header-content .video__play-btn {
+	top: 40%;
+	left: 45%;
+}
+
 .header-content__txt {
 	width: 50%;
 	padding: 75px 0 0 25px;
@@ -174,4 +194,173 @@ a {
 
 .yellow-txt {
 	color: #f5c506;
+}
+
+/* MAIN benefits */
+
+.benefits-wrapper {
+	position: relative;
+	background-image: url('./assets/img/main-benefits-layer.png');
+}
+
+.benefits-wrapper::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	height: 1px;
+	box-shadow: 0 5px 5px #000;
+}
+
+.benefits-wrapper::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	box-shadow: 0 3px 3px 0px #000;
+}
+
+.benefits-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 212px;
+	font-family: 'Segoe UI Light';
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+.benefits-section__item {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 37px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.benefits-section__item img {
+	display: block;
+	margin: 0 auto;
+}
+
+.benefits-section__item_one span {
+	padding-left: 17px;
+}
+
+.benefits-section__item_two span {
+	padding-left: 17px;
+}
+
+.benefits-section__item_three span {
+	padding-right: 17px;
+}
+
+.benefits-section__item_one img {
+	padding: 0px 5px 14px 0;
+}
+
+.benefits-section__item_one img {
+	padding: 0px 5px 14px 0;
+}
+
+.benefits-section__item_two img {
+	padding: 0 0 17px 16px;
+}
+
+.benefits-section__item_three img {
+	padding: 0 21px 13px 0;
+}
+
+/* MAIN slider */
+
+.slider-wrapper {
+	background-image: url('./assets/img/main-slider-layer.png');
+}
+
+.slider-content {
+	font-family: 'Segoe UI Light';
+	color: #fff;
+}
+
+.slider-content h2 {
+	padding: 39px 0 38px;
+	font-family: 'PT Sans';
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+.slider__txt {
+	position: relative;
+	width: 341px;
+	height: 233px;
+	background-color: #ec9e03;
+}
+
+.slider__txt p {
+	padding: 5% 0% 0 9%;
+	font-size: 1.8rem;
+	line-height: 1.3;
+}
+
+.slider .plus {
+	position: absolute;
+	bottom: 5%;
+	left: 92%;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.slider .number {
+	position: absolute;
+	top: 7%;
+	left: 87%;
+	font-size: 1.5rem;
+}
+
+.slider__video {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider .video__play-btn {
+	top: 38%;
+	left: 41%;
+}
+
+.slider__img {
+	position: relative;
+	width: 329px;
+	height: 233px;
+	margin-left: 33px;
+	background-color: #ec9e03;
+}
+
+.slider__img img {
+	position: absolute;
+	top: 24%;
+	left: 24%;
+}
+
+.slider__date {
+	width: 113px;
+	height: 86px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: 'Segoe UI';
+	background-color: #ddb101;
+}
+
+.slider__date p:first-child {
+	padding-top: 4px;
+	font-size: 3.3rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+.slider__date p:last-child {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	color: #b26529;
 }
