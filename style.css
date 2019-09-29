@@ -1,4 +1,9 @@
 @font-face {
+	font-family: 'Lucida Sans';
+	src: url('./assets/fonts/lucida-sans.ttf') format("truetype");
+}
+
+@font-face {
 	font-family: 'MyriadPro Regular';
 	src: url('./assets/fonts/myriadProReg.otf') format("opentype");
 }
@@ -82,9 +87,9 @@ a {
 }
 
 .logo__txt {
-	font-family: 'MyriadPro Regular';
-	margin: 6px 0 0 5px;
-	font-size: 3rem;
+	font-family: 'Lucida Sans';
+	margin: 7px 0 0 3px;
+	font-size: 2.6rem;
 	font-style: italic;
 	color: rgba(255, 255, 255);
 }
@@ -493,9 +498,33 @@ input[type=range]::-moz-range-thumb {
 }
 
 .about__list li {
-	padding: 29px 0 0 10px;;
+	padding: 29px 0 0 10px;
+	;
 	font-family: 'PT Sans';
 	font-size: 1.3rem;
 	list-style-image: url('./assets/img/yellow-marker.png');
 	color: #a9a9a7;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+	position: relative;
+	background-image: url('./assets/img/footer-layout.png');
+	box-shadow: 0px -3px 7px -2px #000;
+}
+
+.footer-wrapper .logo {
+	padding: 6px 0 10px;
+}
+
+.footer-wrapper .logo__img, .footer-wrapper .logo__img img {
+	width: 52px;
+}
+
+.footer-wrapper .logo__txt {
+	margin: 7px 0 0 7px;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
