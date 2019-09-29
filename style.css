@@ -106,13 +106,21 @@ a {
 
 .menu-btn li {
 	background-color: #f5c506;
+	transition-property: background-color;
+	transition-duration: .2s;
+	transition-timing-function: ease-in-out;
+	z-index: 99;
+}
+
+.menu-btn li:hover {
+	background-color: #fdecde;
 }
 
 .menu-btn a {
 	display: flex;
 	position: relative;
 	align-items: flex-end;
-	color: rgb(155, 125, 8);
+	color: #b99403;
 	z-index: 11;
 }
 
@@ -344,7 +352,19 @@ a {
 	width: 11px;
 	height: 11px;
 	background-image: url('./assets/img/plus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 	cursor: pointer;
+	transition-property: width, height, left, bottom;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+}
+
+.slider .plus:hover {
+	left: 91%;
+	bottom: 6%;
+	width: 22px;
+	height: 22px;
 }
 
 .slider .number {
