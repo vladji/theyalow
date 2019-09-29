@@ -1,5 +1,5 @@
 @media screen and (min-width: 641px) {
-	.header-content__video-mob, .slider__social-expand {
+	.header-content__video-mob, .slider__social-expand, .benefits-section__opacity-layer {
 		display: none;
 	}
 }
@@ -7,6 +7,10 @@
 @media screen and (max-width: 640px) {
 	.slider-btn, .nav-bar__bckgr, .header-content__txt, .header-content__video, .benefits-wrapper::before, .benefits-wrapper::after, .benefits-section__item::before, .benefits-section :last-child::after, .slider-content h2, .slider__date, .slider-range, .about__list, .slider .number, .slider .plus {
 		display: none;
+	}
+	.header-wrap {
+		background-image: none;
+		background-color: #5c5c5c;
 	}
 	.header-nav {
 		padding: 0 0 0 11px;
@@ -36,16 +40,35 @@
 	.header-content__video-wrapper, .header-content__video-mob {
 		width: 100%;
 	}
+	/* MAIN */
 	main, footer {
 		position: relative;
 		top: -20px;
 	}
+	/* benefits */
 	.benefits-wrapper {
+		background-image: none;
 		background-color: #fff;
 	}
 	.benefits-section {
 		height: auto;
 		font-size: 1.4rem;
+	}
+	.benefits-section::before {
+		content: "";
+		position: absolute;
+		top: -10px;
+		width: 100%;
+		height: 100%;
+		background-image: url('./assets/img/ben-mob-layer-1.png');
+	}
+	.benefits-section::after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		width: 100%;
+		height: 100%;
+		background-image: url('./assets/img/ben-mob-layer-1.png');
 	}
 	.benefits-section__item {
 		padding-bottom: 27px;
@@ -68,6 +91,7 @@
 	.benefits-section__item_three span {
 		padding: 0;
 	}
+	/* Main slider */
 	.slider-wrapper {
 		background-image: none;
 	}
@@ -94,6 +118,7 @@
 	}
 	.slider__social-expand {
 		width: 51%;
+		margin-left: -1px;
 		flex-direction: column;
 		color: #8f8e8e;
 	}
@@ -134,5 +159,24 @@
 		border-radius: 0 10px 10px 0;
 		color: #fff;
 		background-color: #da9916;
+	}
+	.about h2 {
+		padding-top: 32px;
+	}
+	.about__content {
+		padding: 76px 0 55px 37px;
+	}
+	.about__badge {
+		left: -11px;
+	}
+	.footer-wrapper .logo {
+		padding: 6px 0 7px 66px;
+	}
+	.footer-wrapper .logo__img, .footer-wrapper .logo__img img {
+		width: 30px;
+	}
+	.footer-wrapper .logo__txt {
+		margin: 2px 0 0 7px;
+		font-size: 1rem;
 	}
 }

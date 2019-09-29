@@ -229,6 +229,7 @@ a {
 }
 
 .benefits-section {
+	position: relative;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 212px;
