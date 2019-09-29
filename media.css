@@ -1,0 +1,138 @@
+@media screen and (min-width: 641px) {
+	.header-content__video-mob, .slider__social-expand {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.slider-btn, .nav-bar__bckgr, .header-content__txt, .header-content__video, .benefits-wrapper::before, .benefits-wrapper::after, .benefits-section__item::before, .benefits-section :last-child::after, .slider-content h2, .slider__date, .slider-range, .about__list, .slider .number, .slider .plus {
+		display: none;
+	}
+	.header-nav {
+		padding: 0 0 0 11px;
+	}
+	.logo__img img {
+		width: 39px;
+	}
+	.logo__txt {
+		font-size: 1.1rem;
+		letter-spacing: 2px;
+	}
+	.menu-btn {
+		font-size: 1.2rem;
+	}
+	.btn__about {
+		padding: 23px 28px 20px 25px;
+	}
+	.btn__services {
+		padding: 23px 17px 20px 13px;
+	}
+	.btn__contact {
+		padding: 23px 23px 20px 14px;
+	}
+	.header-content {
+		padding: 0;
+	}
+	.header-content__video-wrapper, .header-content__video-mob {
+		width: 100%;
+	}
+	main, footer {
+		position: relative;
+		top: -20px;
+	}
+	.benefits-wrapper {
+		background-color: #fff;
+	}
+	.benefits-section {
+		height: auto;
+		font-size: 1.4rem;
+	}
+	.benefits-section__item {
+		padding-bottom: 27px;
+	}
+	.benefits-section__item_one img {
+		width: 90px;
+		padding: 32px 33px 21px 0;
+	}
+	.benefits-section__item_two img {
+		width: 68px;
+		padding: 0 0 19px 11px;
+	}
+	.benefits-section__item_three img {
+		width: 69px;
+		padding: 0 4px 17px 0;
+	}
+	.benefits-section__item_one span {
+		padding: 0 25px 0 0;
+	}
+	.benefits-section__item_three span {
+		padding: 0;
+	}
+	.slider-wrapper {
+		background-image: none;
+	}
+	.slider {
+		display: block;
+	}
+	.slider__txt {
+		width: 299px;
+		margin: 16px 0 10px 9px;
+	}
+	.slider__txt p {
+		padding: 12px 30px 0 25px;
+		line-height: 1.2;
+	}
+	.slider__video {
+		margin: 16px 0 10px 9px;
+	}
+	.slider__social, .slider__social-expand {
+		background-color: #f5c507;
+	}
+	.slider__social {
+		width: 50%;
+		margin: 0;
+	}
+	.slider__social-expand {
+		width: 51%;
+		flex-direction: column;
+		color: #8f8e8e;
+	}
+	.message {
+		width: 85%;
+		margin: 13px 0 0 16px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: .8rem;
+		border-radius: 11px;
+		background-color: #fbe89c;
+	}
+	.message:first-child {
+		margin: 21px 0 0 16px;
+		background-color: #fff;
+	}
+	.message p {
+		padding: 7px 20px;
+		line-height: 1.1;
+	}
+	.slider__social-expand form {
+		margin: 14px 0 0 20px;
+	}
+	input[type="text"] {
+		height: 29px;
+		width: 66%;
+		border: 1px solid #ccc;
+		border-radius: 10px 0 0 10px;
+		font-size: 11px;
+		outline: none;
+	}
+	.slider__social-expand button {
+		width: 23%;
+		margin-left: -2px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 0;
+		border-right: 1px solid #ccc;
+		border-radius: 0 10px 10px 0;
+		color: #fff;
+		background-color: #da9916;
+	}
+}
